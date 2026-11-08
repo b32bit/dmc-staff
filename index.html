@@ -5,7 +5,7 @@
 <main class="wrap">
 <section class="panel" id="importPanel"><h2>1. นำเข้าไฟล์ข้อมูล</h2><div class="drop" id="drop"><div style="font-size:28px">📄</div><strong>ลากไฟล์ HTML จากระบบ DMC มาวางที่นี่</strong><div class="hint">รองรับไฟล์ .html และ .htm ที่มีตารางข้อมูล Staff</div><div style="margin-top:12px"><label class="btn" for="file">เลือกไฟล์ HTML</label><input id="file" type="file" accept=".html,.htm,text/html"></div></div><div id="status" class="statusline muted">ยังไม่ได้เลือกไฟล์</div><div class="hint" id="fileInfo"></div><details><summary>รูปแบบข้อมูลและความเป็นส่วนตัว</summary><p class="hint">ระบบอ่านตาราง HTML ที่มีคอลัมน์ Username, ชื่อ, นามสกุล, กลุ่มผู้ใช้งาน, โรงเรียน และเวลา Login ล่าสุด โดยประมวลผลภายในเบราว์เซอร์ของผู้ใช้เท่านั้น ไม่มีการส่งไฟล์ไปยังเซิร์ฟเวอร์ และไม่มีการบันทึกข้อมูลลง Local Storage เมื่อรีเฟรชหรือปิดหน้าเว็บ ข้อมูลจะหายไป</p></details></section>
 <section id="dashboard" class="hidden">
-<div class="notice">เกณฑ์สถานะ: ปกติ = ภายใน 7 วัน · ติดตาม = มากกว่า 7 ถึง 30 วัน · ควรตรวจสอบ = มากกว่า 30 ถึง 90 วัน · ผิดปกติ = มากกว่า 90 วัน · ไม่มีข้อมูลแยกต่างหาก</div>
+<div class="notice" id="statusCriteria">กำลังโหลดเกณฑ์สถานะ...</div>
 <div class="grid">
 <div class="kpi"><div class="label">บัญชีทั้งหมด</div><div class="value" id="total">0</div><div class="note">รายการจากไฟล์</div></div>
 <div class="kpi"><div class="label">โรงเรียน</div><div class="value" id="schoolCount">0</div><div class="note">รหัส/ชื่อโรงเรียนไม่ซ้ำ</div></div>
