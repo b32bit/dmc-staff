@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "description": "เกณฑ์การจัดกลุ่มสถานะการ Login ล่าสุดของ DMC Staff",
+  "statuses": [
+    {
+      "key": "normal",
+      "label": "ปกติ",
+      "className": "normal",
+      "minDays": null,
+      "maxDays": 7,
+      "condition": "Login ภายใน 7 วัน (รวมวันที่อยู่ในอนาคต)",
+      "color": "#16a34a"
+    },
+    {
+      "key": "follow",
+      "label": "ติดตาม",
+      "className": "follow",
+      "minDays": 8,
+      "maxDays": 30,
+      "condition": "มากกว่า 7 วัน ถึง 30 วัน",
+      "color": "#0284c7"
+    },
+    {
+      "key": "check",
+      "label": "ควรตรวจสอบ",
+      "className": "check",
+      "minDays": 31,
+      "maxDays": 90,
+      "condition": "มากกว่า 30 วัน ถึง 90 วัน",
+      "color": "#d97706"
+    },
+    {
+      "key": "bad",
+      "label": "ผิดปกติ",
+      "className": "bad",
+      "minDays": 91,
+      "maxDays": null,
+      "condition": "มากกว่า 90 วัน",
+      "color": "#dc2626"
+    },
+    {
+      "key": "none",
+      "label": "ไม่มีข้อมูล",
+      "className": "none",
+      "minDays": null,
+      "maxDays": null,
+      "condition": "ไม่มีวันที่ Login หรือไม่สามารถอ่านวันที่ได้",
+      "color": "#64748b"
+    }
+  ]
+}
